@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Title-->
+	<title>My first homework</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="styles.css" /> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<!--Body-->
+<body>
+	<header>
+		<!--Class Main header-->
+		<!--<img src="images/images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" Height="564">-->
+
+		<body id="activities">
+			<div class="main-header">
+				<!-- Class Logo-->
+				<div class="logo"> <img src="images/images/logo.png" alt="Great Cliffs Logo" width="125">
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="cliffs.html">CLIFFS</a></li>
+							<li class="active"><a href="activities.html">EVENTS</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
+	</header>
+	<!--Class Main-->
+	<main>
+		<h1>Activities</h1>
+		<p> There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below: </p>
+		
+	<table class="table">
+			<!--<table border="1">-->
+			<caption> Activities at the Cliff </caption>
+			<thead>
+				<tr>
+					<th>Activity</th>
+					<th>West Cliff</th>
+					<th>North Cliff</th>
+					<th>East Cliff</th>
+					<th>South Cliff</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Hiking</td>
+					<td class="selected-activity">College Hikes</td>
+					<td class="selected-activity">Family Fun</td>
+					<td class="selected-activity">Treasure Trails</td>
+					<td class="selected-activity">Canyon Explorer</td>
+				</tr>
+				<tr>
+					<td>Kayak</td>
+					<td class="selected-activity">Western Kayak Meetup</td>
+					<td>Not Available</td>
+					<td class="selected-activity">Youth Kayaking</td>
+					<td class="selected-activity">Kayak down</td>
+				</tr>
+				<tr>
+					<td>Sky Diving</td>
+					<td class="selected-activity">Seacliff Diving</td>
+					<td class="selected-activity">Sky is the Limit</td>
+					<td>Not Available</td>
+					<td class="selected-activity">Sky Diving for beginners</td>
+				</tr>
+				<tr>
+					<td>Biking</td>
+					<td class="selected-activity">Bicycle for one</td>
+					<td>Not Available</td>
+					<td class="selected-activity">Bike Meetup Group</td>
+					<td>Not Available</td>
+				</tr>
+			</tbody>
+			<tr>
+				<td>Camping</td>
+				<td class="selected-activity">Youth Camp</td>
+				<td class="selected-activity">Rent a tent</td>
+				<td class="selected-activity">Campground Adventure</td>
+				<td class="selected-activity">Sunset Camping</td>
+			</tr>
+		</table>
+		<!-- This is for pop up box after activities are selected and listed -->
+		<div id="displaySelected">
+			<div id="result">
+				<h4> My list of selected activities to inquire about</h4>
+			</div>
+			<div id= "sendinfo">
+				<input type="email" placeholder = "johndoe@gmail.com">
+				<button>Get Info</button>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div id="non-disclaimer">
+				<div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
+				<div class="social">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+			</div>
+			<div id="disclaimer">
+				<p> This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use. </p>
+			</div>
+		</footer>
+		</table>
+	</main>
+	<script src="js/activity.js"></script>
+	</body>
+</html>
