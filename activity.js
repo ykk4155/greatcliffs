@@ -9,16 +9,17 @@ $(document).ready(function(){
     
     // list window pop-up
     if ($(this).hasClass("highlight")) {
-      $('#displaySelected').css("visibility", "visible");
+      $('#exampleModal').modal("show");
       $('#displaySelected').css("margin-top", "2em");
       $('#result').append("<p>"+ selected+" at "+eqTitle+"</p>");
     } else {
-      $('#result p:contains('+selected+')').remove();
+      $('#result p:contains(' + selected + ')').remove();
+      $('#exampleModal').modal("show");
       
       if ($('#result').has('p').length == false) {
-        $('#displaySelected').css("visibility","hidden");
+        // $('#displaySelected').css("visibility","hidden");
         $('#displaySelected').css("margin-top","0");
-      }
+      } 
     }
   }
  });
