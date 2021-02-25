@@ -9,7 +9,7 @@
 				background-size: cover;
             }
             #activities header {
-                background: no-repeat white url(images/runfly.jpg);
+                background: no-repeat white url(images/images/cliff-south-canyon.jpg);
 				background-size: cover;
             }
             #contact header {
@@ -36,9 +36,22 @@
 			}
 			.navbar{
 				padding: 0px !important;
+				
+			}
+			.navbar-toggler {
+			
+    		padding: .25rem .75rem;
+    		font-size: 1.25rem;
+    		line-height: 1;
+    		background-color: lightgray;
+    		border: 1px solid;
+    		border-radius: .25rem;
+    		border-radius: 1rem;
 			}
 
-
+			.navbar-light .navbar-toggler-icon {
+    		background-image: url(data:image/svg+xml,%3csvg);
+			}
             /*Activities*/
             table {
                 width: 1000px;
@@ -100,6 +113,7 @@
 				line-height: 100px;
 				text-transform: uppercase;
                 font-size: 14px;
+				background-color: #EEFFE6;
 			}
 			.main-menu ul li a {
 				text-decoration: wavy;
@@ -111,6 +125,7 @@
 			.main-menu ul li.active {
 				background: #dcf162;
 				border-bottom: darkgreen;
+				background-color: #EEFFE6;
 			}
 			.main-menu ul li.active a {
 				color: rgb(248, 73, 234);
@@ -195,15 +210,14 @@
 			}
 
 			/* Partners */
-section {
+/* section {
     width: 100%;
-    background-color: #4288C3;
-}
+    background-color:white;
+} */
 section #partners {  
-    width: 1200px;
     padding: 2em 0 2em 0;
     margin: 0 auto;
-    text-align: center;
+	background-color: rgb(10, 109, 223);
 }
 section #partners .partner {
     display: inline-block;
@@ -211,24 +225,23 @@ section #partners .partner {
     padding: 1.3em 1.5em;
     background-color: #fff;
     border-radius: 50%;
-    width: fit-content;
+    /* width: fit-content; */
 }
 section #partners .partner img {
     width: 90px;
     height: 90px;
 }
 
-#partners {
-  max-width: 90%;
+/* /* #partners {
+  max-width: 100%;
   margin: 0 auto;
-  /* display: grid; */
   grid-gap: 1rem;
 
-}
+} 
 .partner {
   padding: 1rem;
 
-}
+} */
 
 			/* Create two equal columns that floats next to each other */
 			.column {
@@ -341,8 +354,8 @@ section #partners .partner img {
 				text-align: center;
 			}
 			footer #non-disclaimer .social .fa {
-				margin: 0 4px;
-				padding: 15px;
+				margin: 0 2px;
+				padding: 1px;
 				font-size: 30px;
 				width: 30px;
 				text-align: center;
